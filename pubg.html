@@ -112,8 +112,32 @@ I hereby promise that the information above is genuine and valid. Once submitted
 		 		<!-- Add font awesome icons -->
 		 		<a href="https://www.facebook.com/pubgmobile/" class="fa fa-facebook"></a>
 		 		<a href="https://www.twitter.com/pubgmobile/" class="fa fa-twitter"></a>
+		 		<h3>Chat with us!</h3>
+		 		<p>have a chat with us to know more about the Challenge.</p>
 
+		 		<button class="open-button" onclick="openform()">Chat</button>
+		 		<div class="chat-popup" id="myForm">
+		 			<form action="/action_page.php" class="form-container">
+		 				<h3>CHAT</h3>
 
+		 				<label for="msg"><b>Message</b></label>
+		 				<textarea placeholder="Type message.." name="msg" required></textarea>
+
+		 				<button type="submit" class="btn">Send</button>
+		 				<button type="button" class="btn cancel" onclick="closeform()">Close</button>
+		 			</form>
+		 		</div>
+		 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		 		<script>
+		 			function openForm(){
+		 				document.getElementById("myForm").style.display= "block";
+		 			}
+
+		 			function closeForm(){
+		 				document.getElementById("myForm").style.display= "none";
+		 			}
+		 		</script>
 
 	</body>
 </html>
